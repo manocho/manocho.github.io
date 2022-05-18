@@ -1,59 +1,121 @@
+
+* {
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+}
+html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
+    padding: 5px;
     background-color: lightblue;
-}
-  
-h1 {
-  color: lightseagreen;
-  text-align: center;
-  font-family: verdana;
-  font-size: 30px;
+    min-height: 100%;
+    max-width: 60%;
+    margin: auto;
 }
 
-h2 {
-  color: darkgreen;
-  text-align: center;
-  font-family: verdana;
-  font-size: 25px;
-}
-  
-h3 {
-  color: darkgreen;
-  text-align: center;
-  font-family: verdana;
-  font-size: 20px;
+header {
+  padding: 5px;
+  background-color: lightgrey;
 }
 
-p {
-  font-family: verdana;
-  font-size: 15px;
+.header-flex {
+    display: flex;
+    align-items: stretch;
 }
 
 article {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
-  text-align: justify;
-
+  padding: 5px;
+  background-color:lightgoldenrodyellow;
 }
 
-.gmap_canvas {
-  width: 512px;
-  display: block;
-  margin: 0 auto;
+aside {
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  float: right;
+  font-style: italic;
+  background-color: lightgray;
+}
+
+footer {
+  padding: 5px;
+  background-color: lightskyblue;
+}
+
+h1 {
+  padding: 5px;
+  font-size: 20px;
   text-align: center;
 }
 
-/*
-.actividades {
-    width: 60%;
-    display: block;
-    margin: 0 auto;
-  }
-
-
-.elparque {
-  width: 60%;
-  display: block;
-  margin: 0 auto;
+h2 {
+  padding: 5px;
+  font-size: 18px;
 }
-*/
+
+h3 {
+  padding: 5px;
+  font-size: 15px;
+}
+
+h4 {
+  padding: 5px;
+  font-size: 12px;
+}
+
+p {
+  font-size: 14px;
+  padding: 5px;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.4;
+}
+
+.video1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.administracion {
+  font-size: 12px;
+  padding: 5px;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.2;
+}
+
+.identificador {
+  color: darkgreen;
+  border-style: dotted;
+  border-width: 1px;
+  border-color: darkgreen;
+  background-color: lightgreen; 
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centrar {
+text-align: center;
+}
+
+.boton {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
