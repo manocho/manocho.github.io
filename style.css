@@ -1,0 +1,59 @@
+body {
+    background-color: lightblue;
+}
+  
+h1 {
+  color: lightseagreen;
+  text-align: center;
+  font-family: verdana;
+  font-size: 30px;
+}
+
+h2 {
+  color: darkgreen;
+  text-align: center;
+  font-family: verdana;
+  font-size: 25px;
+}
+  
+h3 {
+  color: darkgreen;
+  text-align: center;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+p {
+  font-family: verdana;
+  font-size: 15px;
+}
+
+article {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+  text-align: justify;
+
+}
+
+.gmap_canvas {
+  width: 512px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*
+.actividades {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+
+.elparque {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
+*/
