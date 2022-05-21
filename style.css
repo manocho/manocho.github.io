@@ -1,15 +1,10 @@
 
-/*
-* {
-  border-style: solid;
-  border-width: 1px;
-  border-color: grey;
-}
-*/
+
+/* Estoy usando la familia de Fuentes Roboto Flex de Google Fonts */
 
 html {
   height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Roboto Flex', Arial, Helvetica, sans-serif;
   background-image: url("./images/leoncito2.jpg");
   background-size: cover;
   background-repeat: repeat-y;
@@ -53,6 +48,7 @@ aside {
 footer {
   padding: 5px;
   background-color: lightskyblue;
+  font-family: sans-serif;
 }
 
 h1 {
