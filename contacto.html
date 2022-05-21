@@ -2,10 +2,69 @@
 <html>
 <head>
     <link rel="stylesheet" href="style.css">
-    <title>Parque Nacional El Leoncito</title>
+    <title>Parque Nacional El Leoncito - Contacto</title>
+
+<!--Funciones de JavaScript desde archivo externo -->
+<script src="/scripts.js"></script>
+
 </head>
 
-<body>
-    Contacto
+<body><!--<span class="identificador">Body</span>-->
+
+    <header><!--<span class="identificador">Header</span>-->
+        <div class="header-flex">
+            <div style="flex-grow: 1">
+                <img src="/images/logo_elleoncito.png" alt="Logo El Leoncito">
+            </div>
+            <div style="flex-grow: 8">
+                <h1>Parque Nacional El Leoncito</h1>
+                <nav class="botones"><!--<span class="identificador">Nav</span>-->
+                    <a class="boton" href="/index.html">Inicio</a>
+                    <a class="boton" href="#">Historia</a>
+                    <a class="boton" href="#">Actividades</a>
+                    <a class="botonOn" href="#">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main><!--<span class="identificador">Main</span>-->
+        <article class="intro"><!--<span class="identificador">Article</span>-->
+            <h2>Contactanos</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae quisquam ducimus dolore, dolorem quibusdam et aut, numquam tenetur qui sed iure vero ab, est eaque vel rem dolorum expedita consequuntur?</p>
+        </article>
+<!-- Formulario de Contacto -->
+<!-- Validación en JavaScript-->
+        <div class="formContacto">
+            <form name="contacto" action="/contactar.php" method="POST" onSubmit="return validarFormulario()">
+                <fieldset>
+                    <legend>Datos Personales:</legend>
+                    <label for="nombre">Nombre:</label><br>
+                    <input type="text" id="nombre" name="nombre" size="40"><br>
+                    <label for="apellido">Apellido:</label><br>
+                    <input type="text" id="apellido" name="apellido" size="40" required><br>
+                    <label for="email">Correo Electrónico:</label><br>
+                    <input type="email" id="email" name="email" size="40" required><br>
+                </fieldset>
+                <fieldset>
+                <div class="formAsunto"><label for="asunto">Asunto:</label>
+                    <select name="asunto" id="asunto"> 
+                        <option value="" selected disabled hidden>Elija una Opción</option>
+                        <option value="Consulta">Consulta</option> 
+                        <option value="Sugerencia">Sugerencia</option> 
+                        <option value="otro">Otro</option>
+                    </select>
+                    <div class="formArea"><textarea id="mensaje" name="mensaje" rows="10" cols="60" placeholder="Escribí tu mensaje en este campo"></textarea></div>
+                </fieldset>
+                <div class="formResponder"><input type="checkbox" id="responder" name="responder"><label for="responder">Deseo ser contactado</label>
+                <div class="enviar"> </div><input type="submit" value="Submit"></div>
+            </form> 
+        </div>
+    </main>
+
+    <footer><!--<span class="identificador">Footer</span>-->
+        
+        <p>Este sitio fué creado para un trabajo práctico, utilizando información y contenidos multimedia de acceso público de Wikipedia y Argentina.gob.ar.</p>
+    </footer>
 </body>
 </html>
