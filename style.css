@@ -19,8 +19,8 @@ body {
 }
 
 header {
-  padding: 25px;
-  margin: 15px;
+  padding: 5px;
+  margin: 10px;
   background-color: rgb(205, 133, 63, 0.5);
 }
 
@@ -128,8 +128,28 @@ text-align: center;
 .boton {
   background-color: maroon;
   border: none;
+  color: rgb(230, 205, 205);
+  padding: 5px 10px;
+  min-height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: transform 250ms;
+}
+
+.botonOn {
+  background-color: rgb(175, 29, 29);
+  border-style: solid;
+  border: 2px solid rgb(209, 155, 155);
   color: white;
-  padding: 15px 32px;
+  padding: 6px 12px;
+  min-height: 30px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -140,20 +160,15 @@ text-align: center;
   font-weight: bold;
 }
 
-.botonOn {
-  background-color: rgb(175, 29, 29);
+/* 
+Animación del botón para que resalte al pasar el mouse
+*/
+
+.boton:hover {
+  background-color: rgb(233, 96, 96);
+  transform: translateY(-10px);
   border-style: solid;
   border: 2px solid rgb(209, 155, 155);
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: bold;
 }
 
 .formContacto {
@@ -163,4 +178,16 @@ text-align: center;
   padding-bottom: 25px;
   margin-bottom: 10px;
   text-align: center;
+}
+
+/* Iconos de Google Fonts */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  padding-left: 10px;
+  vertical-align: middle;
 }
