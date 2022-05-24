@@ -64,7 +64,6 @@ h1 {
 
 .gridHeader {
   display: grid;
-/*  grid-template-rows: 100%;*/
   grid-template-areas:
     'logo titulo titulo titulo redes'
     'logo boton1 boton2 boton3 boton4';
@@ -74,7 +73,6 @@ h1 {
 
 .gridIntro {
   display: grid;
-  /*  grid-template-rows: 100%;*/
   grid-template-areas:
     'intro1 intro1 intro1 intro2'
     'intro3 intro3 intro3 intro3';
@@ -84,7 +82,6 @@ h1 {
 
 .gridIframes {
   display: grid;
-  /*  grid-template-rows: 100%;*/
   grid-template-areas:
     'video1 mapa1';
   align-items: center;
@@ -221,7 +218,6 @@ h1 {
  
   .gridHeader {
     display: grid;
-    grid-template-rows: 100%;
     grid-template-areas:
       'logo'
       'titulo'
@@ -236,7 +232,6 @@ h1 {
 
   .gridIntro {
     display: grid;
-    grid-template-rows: 100%;
     grid-template-areas:
       'intro1'
       'intro2'
