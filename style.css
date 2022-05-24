@@ -1,6 +1,12 @@
 
-
 /* Estoy usando la familia de Fuentes Roboto Flex de Google Fonts */
+
+
+/*
+* {
+border: 1px solid black;
+}
+*/
 
 html {
   height: 100%;
@@ -11,153 +17,286 @@ html {
 }
 
 body {
-    padding: 5px;
-    background-color: transparent;
-    min-height: 100%;
-    max-width: 60%;
-    margin: auto;
+  max-width: 70%;
+  margin: auto;
 }
 
 header {
-  padding: 5px;
-  margin: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 25px;
   background-color: rgb(205, 133, 63, 0.5);
 }
 
-.header-flex {
-    display: flex;
-    align-items: stretch;
-}
-
-article {
+main {
   padding: 5px;
-  background-color:rgb(250, 250, 210, 0.8);
+  background-color:rgba(224, 199, 131, 0.8);
   padding-bottom: 25px;
+  margin-top: 10px;
   margin-bottom: 10px;
-}
-
-aside {
-  width: 30%;
-  padding: 15px;
-  margin: 15px;
-  float: right;
-  font-style: italic;
-  background-color: rgb(216, 187, 142);
 }
 
 footer {
   padding: 5px;
-  background-color: lightskyblue;
+  background-color: rgb(78, 174, 233);
   font-family: sans-serif;
 }
 
-h1 {
-  padding: 5px;
-  font-size: 24px;
-  text-align: center;
-  color: #ffffff;
-
-}
-
-h2 {
-  padding: 5px;
-  font-size: 18px;
-}
-
-h3 {
-  padding: 5px;
-  font-size: 15px;
-}
-
-h4 {
-  padding: 5px;
-  font-size: 12px;
+a {
+  text-decoration: none;
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   padding: 5px;
   text-align: justify;
   text-justify: inter-word;
   line-height: 1.4;
 }
 
-.video1 {
+h1 {
+  font-size: 32px;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Definiciones de GRID */
+
+.gridHeader {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-areas:
+    'logo titulo titulo titulo redes'
+    'logo boton1 boton2 boton3 boton4';
+  align-items: center;
+  text-align: center;
+}
+
+.gridIntro {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-areas:
+    'intro1 intro1 intro1 intro2'
+    'intro3 intro3 intro3 intro3';
+  align-items: center;
+  text-align: center;
+}
+
+.gridIframes {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-areas:
+    'video1 mapa1';
+  align-items: center;
+  text-align: center;
+}
+
+
+.logo {
+  grid-area: logo;
+}
+.titulo {
+  grid-area: titulo;
+}
+.redes {
+  grid-area: redes;
+}
+.boton1 {
+  grid-area: boton1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
 }
-
-.mapa1 {
+.boton2 {
+  grid-area: boton2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton3 {
+  grid-area: boton3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boton4 {
+  grid-area: boton4;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/*.articulovideo {
-  background-color: transparent;
-}*/
-
-.administracion {
-  font-size: 12px;
-  padding: 5px;
+.intro1 {
+  grid-area: intro1;
+}
+.intro2 {
+  grid-area: intro2;
+  padding: 15px;
+  margin: 15px;
+  font-style: italic;
+  font-size: 14px;
+  background-color: rgb(216, 187, 142);
   text-align: justify;
   text-justify: inter-word;
-  line-height: 1.2;
+  border: 1px solid rgb(109, 48, 8);
+  line-height: 1.4;
+}
+.intro3 {
+  grid-area: intro3;
 }
 
-.identificador {
-  color: darkgreen;
-  border-style: dotted;
-  border-width: 1px;
-  border-color: darkgreen;
-  background-color: lightgreen; 
+.video1 {
+  grid-area: video1;
+}
+.mapa1 {
+  grid-area: mapa1;
 }
 
-.botones {
+/* Configuración Responsive */
+
+@media (max-width: 1450px) {
+
+  .gridIframes {
+    grid-template-areas:
+      'video1'
+      'mapa1';
+  }
+  
+}
+@media (max-width: 1000px) {
+ 
+  .gridHeader {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-areas:
+      'logo logo'
+      'titulo titulo'
+      'redes redes'
+      'boton1 boton2'
+      'boton3 boton4';
+    align-items: center;
+    text-align: center;
+  }
+
+  .gridIntro {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-areas:
+      'intro1'
+      'intro2'
+      'intro3';
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .gridIframes {
+    grid-template-areas:
+      'video1'
+      'mapa1';
+  }
+
+  body {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .redes {
+    margin-bottom: 20px;
+  }
+
+  .boton1 {
+    margin-bottom: 20px;
+  }
+  
+  .boton2 {
+    margin-bottom: 20px;
+  }
+  
+  .boton3 {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (max-width: 500px) {
+ 
+  .gridHeader {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-areas:
+      'logo'
+      'titulo'
+      'redes'
+      'boton1'
+      'boton2'
+      'boton3'
+      'boton4';
+    align-items: center;
+    text-align: center;
+  }
+
+  .gridIntro {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-areas:
+      'intro1'
+      'intro2'
+      'intro3';
+    align-items: center;
+    text-align: center;
+  }
+
+  .gridIframes {
+    grid-template-areas:
+      'video1'
+      'mapa1';
+  }
+
+
+  body {
+    max-width: 100%;
+    margin: auto;
+  }
+  
+  .redes {
+    margin-bottom: 20px;
+  }
+
+  .boton1 {
+    margin-bottom: 20px;
+  }
+  
+  .boton2 {
+    margin-bottom: 20px;
+  }
+  
+  .boton3 {
+    margin-bottom: 20px;
+  }
+
+}
+
+/* Botones */
+
+.boton {
+  background-color: rgb(145, 43, 26);
+  border: none;
+  border-radius: 4px;
+  color: rgb(245, 228, 228);
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.centrar {
-text-align: center;
-}
-
-.boton {
-  background-color: maroon;
-  border: none;
-  color: rgb(230, 205, 205);
   padding: 5px 10px;
+  margin: 2px 5px;
   min-height: 30px;
-  text-align: center;
+  max-width: 130px;
   vertical-align: middle;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 2px 5px;
-  cursor: pointer;
-  border-radius: 4px;
   font-weight: bold;
+  cursor: pointer;
   transition: transform 250ms;
-}
-
-.botonOn {
-  background-color: rgb(175, 29, 29);
-  border-style: solid;
-  border: 2px solid rgb(209, 155, 155);
-  color: white;
-  padding: 6px 12px;
-  min-height: 30px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 4px;
-  font-weight: bold;
 }
 
 /* 
@@ -165,15 +304,45 @@ Animación del botón para que resalte al pasar el mouse
 */
 
 .boton:hover {
-  background-color: rgb(233, 96, 96);
+  background-color: rgb(204, 102, 95);
   transform: translateY(-10px);
   border-style: solid;
   border: 2px solid rgb(209, 155, 155);
 }
 
+.botonOn:hover {
+  background-color: rgb(175, 29, 29);
+  transform: none;
+  border-style: solid;
+  border: 2px solid rgb(209, 155, 155);
+}
+
+
+.botonOn {
+  background-color: rgb(175, 29, 29);
+  border-style: solid;
+  border: 2px solid rgb(209, 155, 155);
+  color: white;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  transition: none;
+}
+
+.iconos {
+  font-size: 32px;
+  color:rgb(250, 250, 210, 0.8);
+  margin-left: 20px;
+}
+
+.logoImagen {
+  max-width: 100px;
+  height: auto;
+}
+
 .formContacto {
   padding: 5px;
-  background-color:rgb(250, 250, 210, 0.8);
+  background-color:rgb(250, 250, 210, 0.5);
   padding-top: 25px;
   padding-bottom: 25px;
   margin-bottom: 10px;

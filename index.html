@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <title>Parque Nacional El Leoncito</title>
 
     <!-- Fuentes de la familia Roboto Flex de Google Fonts -->
     <!-- Iconos de la familia Material Symbols de Google Fonts -->
+    <!-- Iconos de redes sociales de FontAwesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap"> 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
-<body><!--<span class="identificador">Body</span>-->
+<body>
 
-    <header><!--<span class="identificador">Header</span>-->
-        <div class="header-flex">
-            <div style="flex-grow: 1">
-                <img src="/images/logo_elleoncito.png" alt="Logo El Leoncito">
-            </div>
-            <div style="flex-grow: 8">
-                <h1>Parque Nacional El Leoncito</h1>
-                <nav class="botones"><!--<span class="identificador">Nav</span>-->
-                    <a class="botonOn" href="#">Inicio<span class="material-symbols-outlined">home</span></a>
-                    <a class="boton" href="/historia.html">Historia<span class="material-symbols-outlined">auto_stories</span></a>
-                    <a class="boton" href="/actividades.html">Actividades<span class="material-symbols-outlined">hiking</span></a>
-                    <a class="boton" href="/contacto.html">Contacto<span class="material-symbols-outlined">mail</span></a>
-                </nav>
-            </div>
-        </div>
-    </header>
+<header>
 
-    <main><!--<span class="identificador">Main</span>-->
-        <article class="intro"><!--<span class="identificador">Article</span>-->
-            <h2>Bievenidos al Sitio Web del Parque</h2>
-            <p>El Parque Nacional El Leoncito se encuentra sobre los faldeos occidentales de las sierras del Tontal en el sur del departamento Calingasta, extremo suroeste de la provincia de San Juan en Argentina. Se halla a 34 km de la localidad de Barreal y en el límite con la provincia de Mendoza. Posee una superficie de 89 706 ha 7793 m². Se encuentra atravesado por un tramo de 20 km del trazado de la Ruta Nacional 149 que une Barreal con Uspallata</p>
-            <aside><!--<span class="identificador">Aside</span>-->
-                <h4>Administración</h4>
-                <div class="administracion">Por resolución n.º 126/2011 de la Administración de Parques Nacionales de 19 de mayo de 2011 se dispuso que parque nacional encuadrara para los fines administrativos en la categoría áreas protegidas de complejidad III, por lo cual tiene a su frente un intendente designado, del que dependen 4 departamentos (Administración; Obras y Mantenimiento; Guardaparques Nacionales; Conservación y Uso Público) y la división de Despacho y Mesa de Entradas, Salidas, y Notificaciones. La intendencia tiene su sede en la localidad de Barreal. </div>
-            </aside>
-                <h2>Características Generales</h2>
-                <p>El plan de manejo del parque nacional destaca los valores a conservar en el mismo: condiciones atmosféricas excepcionales; sistema hídrico de la ladera occidental de la sierra del Tontal y la biodiversidad asociada; tres ecorregiones representadas: Monte de sierras y bolsones, Puna y Altos Andes; presencia de especies endémicas y especies con algún grado de amenaza; especies de valor funcional; recursos paleontológicos de alto valor científico; recursos culturales. En su extensión conserva muestras representativas de especies vegetales (especies xerófilas, de ambientes húmedos, de alta montaña y altoandinas), preserva el hábitat de especies animales amenazadas (suri cordillerano y guanaco), protege sitios históricos (casco de la estancia El Leoncito) y yacimientos de importancia paleontológica y arqueológica. Allí existía la presencia de un valle el cual le dio el color blanco radiante que lo caracteriza.</p>
-                <p>Dentro del parque pueden distinguirse diferentes paisajes, desde el valle hasta la precordillera. En su interior funcionan el Observatorio Félix Aguilar (ex Observatorio Astronómico Dr. Carlos U. Cesco), el Complejo Astronómico El Leoncito (CASLEO), uno de los más importantes del país y una pista de carrovelismo.</p>
-                <p>El parque nacional registra la existencia de 75 familias de plantas vasculares que contienen a 602 entidades. Se confirmó la existencia de 166 entidades de vertebrados: 26 especies de mamíferos (3 exóticas), 123 especies de aves (2 exóticas), 13 especies de reptiles, 2 especies de anfibios y 2 especies de peces (1 exótica).</p>
-                <p>El parque nacional registra la presencia de un sitio que data del Imperio incaico, ya que por allí pasaba el Camino del Inca.</p>
-                <p>El único ingreso habilitado al parque nacional se encuentra en las inmediaciones del arroyo del Leoncito, en el camino que une con la Ruta Nacional 149. </p>                
+    <nav class="gridHeader">
+        <section class="logo"><img class="logoImagen" src="/images/logo_elleoncito.png" alt="Logo El Leoncito"></section>
+        <section class="titulo"><h1>Parque Nacional El Leoncito</h1></section>
+        <section class="redes">
+            <a class="fa fa-instagram" href="#" style="font-size:24px;color:rgb(250, 250, 210, 0.8);padding-right: 15px"></a>
+            <a class="fa fa-facebook" href="#" style="font-size:24px;color:rgb(250, 250, 210, 0.8);padding-right: 15px"></a>
+            <a class="fa fa-twitter" href="#" style="font-size:24px;color:rgb(250, 250, 210, 0.8);padding-right: 15px"></a>
+        </section>
+        <section class="boton1"><a class="boton botonOn" href="#"><span style="padding-right: 10px">Inicio</span><span class="material-symbols-outlined">home</span></a></section>
+        <section class="boton2"><a class="boton" href="/historia.html"><span style="padding-right: 10px">Historia</span><span class="material-symbols-outlined">auto_stories</span></a></section>
+        <section class="boton3"><a class="boton" href="/actividades.html"><span style="padding-right: 10px">Actividades</span><span class="material-symbols-outlined">hiking</span></a></section>
+        <section class="boton4"><a class="boton" href="/contacto.html"><span style="padding-right: 10px">Contacto</span><span class="material-symbols-outlined">mail</span></a></section>
+    </nav>
+
+</header>
+
+    <main>
+
+        <article>
+
+            <nav class="gridIntro">
+                <section class="intro1">
+                    <h2>Bievenidos al Sitio Web del Parque</h2>
+                    <p>El Parque Nacional El Leoncito se encuentra sobre los faldeos occidentales de las sierras del Tontal en el sur del departamento Calingasta, extremo suroeste de la provincia de San Juan en Argentina. Se halla a 34 km de la localidad de Barreal y en el límite con la provincia de Mendoza. Posee una superficie de 89 706 ha 7793 m². Se encuentra atravesado por un tramo de 20 km del trazado de la Ruta Nacional 149 que une Barreal con Uspallata</p>
+                    <h3>Características Generales</h2>
+                    <p>El plan de manejo del parque nacional destaca los valores a conservar en el mismo: condiciones atmosféricas excepcionales; sistema hídrico de la ladera occidental de la sierra del Tontal y la biodiversidad asociada; tres ecorregiones representadas: Monte de sierras y bolsones, Puna y Altos Andes; presencia de especies endémicas y especies con algún grado de amenaza; especies de valor funcional; recursos paleontológicos de alto valor científico; recursos culturales. En su extensión conserva muestras representativas de especies vegetales (especies xerófilas, de ambientes húmedos, de alta montaña y altoandinas), preserva el hábitat de especies animales amenazadas (suri cordillerano y guanaco), protege sitios históricos (casco de la estancia El Leoncito) y yacimientos de importancia paleontológica y arqueológica. Allí existía la presencia de un valle el cual le dio el color blanco radiante que lo caracteriza.</p>
+                </section>
+
+                <section class="intro2">
+                    <h4>Administración</h4>
+                    <div class="administracion">Por resolución n.º 126/2011 de la Administración de Parques Nacionales de 19 de mayo de 2011 se dispuso que parque nacional encuadrara para los fines administrativos en la categoría áreas protegidas de complejidad III, por lo cual tiene a su frente un intendente designado, del que dependen 4 departamentos (Administración; Obras y Mantenimiento; Guardaparques Nacionales; Conservación y Uso Público) y la división de Despacho y Mesa de Entradas, Salidas, y Notificaciones. La intendencia tiene su sede en la localidad de Barreal. </div>
+                </section>
+
+                <section class="intro3"><p>Dentro del parque pueden distinguirse diferentes paisajes, desde el valle hasta la precordillera. En su interior funcionan el Observatorio Félix Aguilar (ex Observatorio Astronómico Dr. Carlos U. Cesco), el Complejo Astronómico El Leoncito (CASLEO), uno de los más importantes del país y una pista de carrovelismo.</p>
+                    <p>El parque nacional registra la existencia de 75 familias de plantas vasculares que contienen a 602 entidades. Se confirmó la existencia de 166 entidades de vertebrados: 26 especies de mamíferos (3 exóticas), 123 especies de aves (2 exóticas), 13 especies de reptiles, 2 especies de anfibios y 2 especies de peces (1 exótica).</p>
+                    <p>El parque nacional registra la presencia de un sitio que data del Imperio incaico, ya que por allí pasaba el Camino del Inca.</p>
+                    <p>El único ingreso habilitado al parque nacional se encuentra en las inmediaciones del arroyo del Leoncito, en el camino que une con la Ruta Nacional 149. </p>
+                </section>
+
+            </nav>
+
         </article>
-        <article class="articulovideo"><!--<span class="identificador">Article</span>-->
-            <h2>Como es el parque y dónde está ubicado</h2>
-            <div class="video1">
-                <iframe width="730" height="411" src="https://www.youtube.com/embed/rdgfSBsFtv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="mapa1">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d516290.69765711547!2d-69.3391267101843!3d-31.77665396719685!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x927d0dcaa1badda8!2sParque%20Nacional%20El%20Leoncito!5e0!3m2!1ses-419!2sar!4v1652923370126!5m2!1ses-419!2sar" width="730" height="411" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+
+        <article>
+
+            <nav class="gridIframes">
+                <section class="video1">
+                    <iframe width="500" height="380" src="https://www.youtube.com/embed/rdgfSBsFtv4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+
+                <section class="mapa1">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d516290.69765711547!2d-69.3391267101843!3d-31.77665396719685!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x927d0dcaa1badda8!2sParque%20Nacional%20El%20Leoncito!5e0!3m2!1ses-419!2sar!4v1652923370126!5m2!1ses-419!2sar" width="500" height="380" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </section>
+            </nav>
+
         </article>
+
     </main>
 
-    <footer><!--<span class="identificador">Footer</span>-->
-        
-        <p>Este sitio fué creado para un trabajo práctico, utilizando información y contenidos multimedia de acceso público de Wikipedia y Argentina.gob.ar.</p>
-    </footer>
+<footer>
+    <p>Este sitio fué creado para un trabajo práctico, utilizando información y contenidos multimedia de acceso público de Wikipedia y Argentina.gob.ar.</p>
+    <p><b>Autor:</b> Manuel Nogueiras - Mayo 2022</p>
+</footer>
+
 </body>
 </html>
