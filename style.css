@@ -50,10 +50,18 @@ p {
   line-height: 1.4;
 }
 
+li {
+margin-top: 5px;  
+}
+
 h1 {
   font-size: 32px;
   text-align: center;
   color: #ffffff;
+}
+
+h2 {
+  text-align: center;
 }
 
 /* Definiciones de GRID */
