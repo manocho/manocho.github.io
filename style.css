@@ -42,10 +42,6 @@ footer {
   font-family: sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 p {
   font-size: 16px;
   padding: 5px;
@@ -88,7 +84,6 @@ h1 {
   text-align: center;
 }
 
-
 .logo {
   grid-area: logo;
 }
@@ -97,6 +92,7 @@ h1 {
 }
 .redes {
   grid-area: redes;
+  font-size: 24px;
 }
 .boton1 {
   grid-area: boton1;
@@ -149,6 +145,81 @@ h1 {
   grid-area: mapa1;
 }
 
+/* Botones */
+
+.boton {
+  background-color: rgb(145, 43, 26);
+  border: none;
+  border-radius: 4px;
+  color: rgb(245, 228, 228);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50px;
+  min-width: 160px;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 250ms;
+}
+
+/* Iconos de Redes Sociales de FontAwesome */
+
+.fa {
+  text-decoration: none;
+  color:rgb(250, 250, 210);
+  padding-right: 20px;
+}
+
+/* 
+Animación del botón para que resalte al pasar el mouse
+*/
+
+.boton:hover {
+  background-color: rgb(204, 102, 95);
+  transform: translateY(-10px);
+  border-style: solid;
+  border: 2px solid rgb(209, 155, 155);
+}
+
+.botonOn:hover {
+  background-color: rgb(175, 29, 29);
+  transform: none;
+  border-style: solid;
+  border: 2px solid rgb(209, 155, 155);
+}
+
+
+.botonOn {
+  background-color: rgb(175, 29, 29);
+  border-style: solid;
+  border: 2px solid rgb(209, 155, 155);
+  color: white;
+  transition: none;
+}
+
+.iconos {
+  font-size: 32px;
+  color:rgb(250, 250, 210, 0.8);
+  margin-left: 20px;
+}
+
+.logoImagen {
+  max-width: 100px;
+  height: auto;
+}
+
+.formContacto {
+  padding: 5px;
+  background-color:rgb(250, 250, 210, 0.5);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
 /* Configuración Responsive */
 
 @media (max-width: 1450px) {
@@ -198,6 +269,7 @@ h1 {
 
   .redes {
     margin-bottom: 20px;
+    font-size: 40px;
   }
 
   .boton1 {
@@ -212,6 +284,18 @@ h1 {
     margin-bottom: 20px;
   }
 
+  .boton {
+    min-height: 80px;
+    min-width: 200px;
+    font-size: 24px;
+  }
+
+  a {
+    font-size: 64px;
+    color:rgb(250, 250, 210, 0.8);
+    margin-left: 40px;
+  }
+  
 }
 
 @media (max-width: 500px) {
@@ -246,6 +330,13 @@ h1 {
       'mapa1';
   }
 
+  .boton {
+    padding: 20px 30px 20px 30px;
+    margin: 2px 5px;
+    min-height: 60px;
+    max-width: 200px;
+    font-size: 32px;
+  }
 
   body {
     max-width: 100%;
@@ -254,6 +345,7 @@ h1 {
   
   .redes {
     margin-bottom: 20px;
+    font-size: 40px;
   }
 
   .boton1 {
@@ -268,78 +360,6 @@ h1 {
     margin-bottom: 20px;
   }
 
-}
-
-/* Botones */
-
-.boton {
-  background-color: rgb(145, 43, 26);
-  border: none;
-  border-radius: 4px;
-  color: rgb(245, 228, 228);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px 10px;
-  margin: 2px 5px;
-  min-height: 30px;
-  max-width: 130px;
-  vertical-align: middle;
-  text-decoration: none;
-  font-size: 16px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: transform 250ms;
-}
-
-/* 
-Animación del botón para que resalte al pasar el mouse
-*/
-
-.boton:hover {
-  background-color: rgb(204, 102, 95);
-  transform: translateY(-10px);
-  border-style: solid;
-  border: 2px solid rgb(209, 155, 155);
-}
-
-.botonOn:hover {
-  background-color: rgb(175, 29, 29);
-  transform: none;
-  border-style: solid;
-  border: 2px solid rgb(209, 155, 155);
-}
-
-
-.botonOn {
-  background-color: rgb(175, 29, 29);
-  border-style: solid;
-  border: 2px solid rgb(209, 155, 155);
-  color: white;
-  /*display: flex;
-  justify-content: center;
-  align-items: center;*/
-  transition: none;
-}
-
-.iconos {
-  font-size: 32px;
-  color:rgb(250, 250, 210, 0.8);
-  margin-left: 20px;
-}
-
-.logoImagen {
-  max-width: 100px;
-  height: auto;
-}
-
-.formContacto {
-  padding: 5px;
-  background-color:rgb(250, 250, 210, 0.5);
-  padding-top: 25px;
-  padding-bottom: 25px;
-  margin-bottom: 10px;
-  text-align: center;
 }
 
 /* Iconos de Google Fonts */
