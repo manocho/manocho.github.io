@@ -17,7 +17,7 @@ function validarFormulario() {
     } else if (document.forms["contacto"]["apellido"].value.match(specialChars)) {
         alert("Caracteres inválidos en el campo Apellido!");
         return false;
-    } else if (document.forms["contacto"]["mensaje"].value.length<16 || document.forms["contacto"]["apellido"].value.length>500) {
+    } else if (document.forms["contacto"]["mensaje"].value.length<16 || document.forms["contacto"]["mensaje"].value.length>500) {
         alert("Por favor ingrese un mensaje mayor a 16 caracteres y menor a 500");
         return false;
     }
